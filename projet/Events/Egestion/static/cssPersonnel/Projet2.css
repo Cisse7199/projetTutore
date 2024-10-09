@@ -1,0 +1,107 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+.container-fluid{
+    background-color: beige;
+}
+
+[class*="col-"]{
+    margin-top: 3px;
+    border-style: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    font-size: 25px;
+    color: white;
+    display: flex;
+}
+
+#titre{
+    background-color: hsl(76, 60%, 50%);
+    letter-spacing: 15px;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+nav a{
+    text-align: right;
+}
+nav a:hover{
+    /*background-color: blue;*/
+    text-decoration: dotted;
+    color: blue;
+}
+#navred{
+    background-color: #e90d0d;
+    height: 100px !important;
+}
+#profil{
+    background-color: #0cb639;
+    height: 100px !important;
+}
+
+
+.col-lg-3:nth-of-type(1){
+    background-color: aqua;
+    height: 100px;
+}
+.col-lg-6{
+    background-color: #764407;
+    border-radius: 10px;
+    border-style: hidden;
+    height: 100px;
+}
+.col-lg-3:nth-last-of-type(2),.col-lg-3:nth-of-type(3){
+    background-color: green;
+    height: 100px;
+    border-style: hidden;
+}
+/*.col-lg-4{
+    background-color: pink;
+    height: 100px;
+    border-style: hidden;
+}*/
+.col-lg-2{
+    background-color: #e90d0d;
+    height: 600px;
+    border-style: hidden;
+}
+.col-lg-10:nth-of-type(2){
+    background-color: hsl(258, 81%, 39%);
+    height: 600px;
+    border-style: hidden;
+}
+.col-lg-12{
+    background-color: #3e3a3a;
+    height: 60px;
+}
+.col-lg-12:last-child{
+    background-color: #0cb639;
+    height: 200px;
+    border-style: hidden;
+}
+.col-lg-4{
+    height: 200px;
+    background-color: #3fda42;
+    border-style: hidden;
+    font-size: 20px;
+}
+.col-lg-8{
+    background-color: #3fda42;
+    height: 100px;
+    border-style: hidden;
+}
+#search{
+    height: 80px !important;
+    width: 500px !important;
+    border-radius: 15px;
+    border:3px solid blue; 
+}
+img{
+    height: 100%;
+    width: 200px;
+}

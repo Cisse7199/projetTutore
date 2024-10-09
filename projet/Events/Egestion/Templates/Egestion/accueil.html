@@ -1,34 +1,83 @@
 <!DOCTYPE html>
- <!-- Ici je précise la langue du contenu du document -->
-<html lang='fr'>
+{% load static %}
+<html lang="en">
 <head>
-	<!-- Ici je précise le nom du jeu de caractères -->
-	<meta charset="utf-8">
-	<!-- Ici je donne une directive pour des adaptations d'échelle sur un smartphone -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'cssPersonnel/Projet2.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{% static 'fontawesome-free-6.6.0-web\css\all.css' %}">
+    <title>accueil</title>
 </head>
-<body style="background-color:green">
-    <p> Merci de votre patience</p>
-    <p><h2> Voici mon premier site</h2></p>
-    <p><a href="<forme>">Lien vers la page suivante</a></p>
-    <p>Premiere colone</p>
-    <hr>
-    <p>Deuxieme colone</p>
-    <hr>
-    <p>Troisieme colone</p>
-    <hr>
-    <p><a href="forme">Se connecter au site</a></p>
-    
+<body>
+    <div class="container-fluid">
+        <div class="row" id="sommet">
+            <div class="col-lg-2" id="navred">
+                
+                <img src="{% static 'Images\Capture.PNG' %}" alt="G-Events" title="G-Events" class="rounded">
+            </div>
+            <div class="col-lg-7"  id="titre">G-EVENTS</div>
+            <div class="col-lg-3"><span class="bi bi-alarm">Alarme</i></span><span class ="glyphicon glyphicon-ok form-control-feedback"> </span></div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <a href="#" class="navbar-brand">Accueil</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item aczive">
+                    <a href="#" class="navbar-brand">Evenements <span class="sr-only">(current)</span></a>
 
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="navbar-brand">A propos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="navbar-brand dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+            </ul>
+        </div>
 
-	<!-- Mettre le code HTML ici -->
+        </nav>
 
+        <div class="row">
+                    <div class="col-lg-2" id="navred"></div>
+                    <div class="col-lg-8 ">
+                        <form action="post" class="form-inline my-6 my-lg-0">
+                            <input type="search" class="form-control mr-sm-5" placeholder="Chercher" aria-label="Search" id="search">
+                            <button class="btn btn-success btn-primary my-2 my-sm-0 btn-lg" type="submit"><i class="fa fa-search"></i>Chercher</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-2" id="profil"></div>
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-2">Infos de gauche</div>
+            <div class="col-lg-10">Infos de page <i class="far fa-angry" style="background-color: brown;color:blue;"></i></div>
+                
+        </div>
+        <div class="row">
+            <div class="col-lg-4" id="piedPage">--------Nirservices------ <br> disponible a tout moment <br>24h/24 7j/7 <br>Nous offrons des services <br>informatiques</div>
+            <div class="col-lg-4" id="piedPage">&copy; Tous droits reserves <br>BF-OUAGA <br>BP 3306</div>
+            <div class="col-lg-4" id="piedPage">Nous utilisons une politique de securite <br>et de confidentialite <br>pour la protection de vos donnes</div>
+        </div>
+    </div>
+    <script src="{% static 'js\bootstrap.js' %}"></script> 
 </body>
 </html>
-
-
-
-
 
 
 

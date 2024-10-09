@@ -25,7 +25,7 @@ def paiement(request):
     return render(request, 'Egestion/paiement.html')
 
 #Page aide constitues de FAQ(Questions reponses)
-def pageAideI(request):
+def pageAide(request):
     return(request, 'Egestion/pageAide.html')
 
 #Pade A propos de l´application et de ses concepteurs(une petite description)

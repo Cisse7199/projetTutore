@@ -5,4 +5,8 @@ urlpatterns = [
     path("accueil", views.home),
     path("", views.accueil, name="accueil"),
     path("<forme>/", views.form, name="form"),
+    path("",views.listEvents, name="listEvents"),
+    path("",views.paiement, name="paiement"),
+    path("",views.aPropos, name="aPropos"),
+    path("",views.pageAide, name="pageAide"),
 ]
