@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 {%load static%}
 <html lang="en">
@@ -6,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="{% static 'cssPersonnel/formevent.css' %}">
+    <link rel="stylesheet" href="{% static 'cssPersonnel/projetform.css' %}">
     <link rel="stylesheet" href="{% static 'css\bootstrap.css' %}">
-    <title> Creation d´un evenement </title>
+    <title>Formulaire de connexion </title>
 </head>
 <body>
     <div class="row">
@@ -53,53 +52,23 @@
         </div>
     </div>
     <div class="divform">
+        <img src="./Capture-removebg-preview.png" alt="G_EVENT" title="G_EVENT" class="imageaccueil">
         <form action="" method="post" >
-            <p><h2 class="creation">Creer un evenement</h2></p>
-        <div class="row">
-            <div class="col-lg-4">Nom utilisateur  :</div>
-            <div class="col-lg-8"><input type="text" id="username"    name="nomuser" value="" placeholder="Votre nom d utilisateur" required class="form-control input-lg"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4">Email utilisateur  :</div>
-            <div><input type="text" name="emailuser" value="" placeholder="Votre email" required class="form-control"></div>
-        </div>
+            <p><h2>Se connecter</h2></p>
         
-        <div class="row">
-            <div class="col-lg-4">Type evenement :</div>
-            <div><input type="email" name="typeevenemnt" value="" placeholder="Le type d´evenement" required class="form-control"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4">Identifiant evenement :</div>
-            <div><input type="password" name="motdepasseevenement" value="" placeholder="Description de l´evenement" required class="form-control"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4">Date de creation :</div>
-            <div><input type="date" name="datecreation" value="" placeholder="Date de creation" required class="form-control"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4">Charger une image  :</div>
-            <div><input type="file" name="imgevenement" value="" placeholder="Image evenement" required class="form-control"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4">Decrire evenement :</div>
-            <div><input type="text" rows="6" cols="50"  name="description" value="" placeholder="Description en quelques lignes de votre evenement" required class="form-control"></div>
-        </div>
-
+        
+        <input type="email" name="email" value="" placeholder="Votre email" required class="form-control">
+        <input type="password" name="motdepasse" value="" placeholder="Votre mot de passe" required class="form-control">
         <p>
-            <b style="color: red;"> Avez vous deja des evenements ? <br></b>Si  oui <a href="#"><b style="color:rgb(10, 40, 237);">Acceder a la page de gestions</b></a>
+            <b style="color: red;"> Vous n´avez pas de compte ?<br> </b>si  oui <a href="projetform.html"><b style="color:hsl(245, 92%, 48%);">S`inscrire</b></a>
         </p>
         <p>
-            <input type="submit" class="btn btn-primary" id="button" value="Creer">
+            <input type="submit" class="btn btn-primary" id="button" value="Se connecter">
         </p>
     
     </div>
 
-    <footer class="footercol">
+    <footer>
         <div class="row" id="pieddesign">
             <div class="col-lg-4" id="piedPage">--------ILBOUDO PRODUCTION------ <br> disponible a tout moment <br>24h/24 7j/7 <br>Nous offrons des services <br>informatiques</div>
             <div class="col-lg-4" id="piedPage">&copy; Tous droits reserves <br>BF-OUAGA <br>BP 3306</div>

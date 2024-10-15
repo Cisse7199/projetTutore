@@ -2,11 +2,14 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("accueil", views.home),
+    #path("accueil", views.home),
     path("", views.accueil, name="accueil"),
-    path("<forme>/", views.form, name="form"),
-    path("",views.listEvents, name="listEvents"),
-    path("",views.paiement, name="paiement"),
-    path("",views.aPropos, name="aPropos"),
-    path("",views.pageAide, name="pageAide"),
+    path("formconnec/connexion", views.form, name="formconnec"),
+    path("formevent",views.listEvents, name="formevent"),
+    path("paiement",views.paiement, name="paiement"),
+    path("aPropos",views.aPropos, name="aPropos"),
+    path("pageAide",views.pageAide, name="pageAide"),
+    path("listEvenement",views.listEvenement, name="listEvenement"),
+    path("form2",views.formConnec, name="form2"),
+    
 ]

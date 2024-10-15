@@ -1,0 +1,242 @@
+body{
+    background-color:#c02929;
+}
+.divform{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    
+
+}
+form{
+   background-color: hwb(176 52% 29%);
+   padding-left: 20px;
+   padding-right: 30px;
+   padding-top: 15px;
+   border-radius: 10px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   align-items: center;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    float: left;
+    /*text-align: center;*/
+}
+.imageaccueil{
+    align-items: center;
+    color: aqua;
+}
+
+input{
+    margin-bottom: 35px;
+    width: 300px;
+    border-radius: 5px;
+
+}
+footer{
+    height: 200px;
+    background-color: #45a4a4;
+}
+.form-control{
+    margin-top: 25px;
+    font-size: 20px;
+    border-radius: 7px blue;
+}
+/*nav{
+    display: inline;
+    margin-left: 20px;
+    text-decoration: none;
+}*/
+#button{
+    font-size: 20px;
+    font-weight: bold;
+}
+#piedPage{
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+    
+}
+nav{
+    background-color: hwb(183 35% 37%);
+    height:80px ;
+    text-align:center;
+    justify-content: center;
+    justify-items: center;
+    align-items:center;
+    text-decoration: none;
+    
+    
+}
+nav ul::after{
+    content: "";
+    display: table;
+    /*clear: both;*/
+}
+nav a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 30px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+    font-weight: bold;
+    display: block;
+    
+}
+nav a:hover{
+    background-color:blue ;
+    color: aliceblue;
+}
+
+#colg2{
+    /*background-color:hwb(183 35% 37%) ;*/
+    height: 80px;
+    border-right: 2px solid;
+    font-size: 22px;
+    letter-spacing: 5px;
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+}
+#cold1{
+    background-color:hwb(183 35% 37%) ;
+    height: 80px;
+    border-right: 2px solid;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #fcfcfc;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+#cold2{
+    background-color:hwb(183 35% 37%) ;
+    height: 80px;
+    border-left: 2px solid;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color:#fcfcfc;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+#cold1 a, #cold2 a{
+    color: white;
+}
+#col2 a{
+    width: 100px;
+    height: 150px;
+}
+
+#cold2 a:hover{
+    color: rgb(202, 238, 44);
+}
+#cold1 a:hover{
+    color:rgb(202, 238, 44); 
+}
+
+/*#pieddesign{
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+
+}*/
+.sous{
+    display: none;
+    background-color:#443d3d ;
+    box-shadow: 1px 1px 2px black;
+    font-size: 17px;
+}
+
+/*.user{
+    display: none;
+    background-color:#443d3d ;
+    box-shadow: 1px 1px 2px black;
+    font-size: 17px;
+}
+#cold2 > a i:hover .user{
+    display: block;
+}*/
+
+nav > ul li:hover .sous{
+    display: block;
+    
+}
+.sous li{
+    float: left;
+    text-align: left;
+    width: 100%;
+    border-bottom: 2px solid;
+    font-size: 17px;
+    
+}
+.sous a{
+    /*padding: 10px;*/
+    border-bottom: none;
+    color: #092828;
+    font-size: 22px;
+    
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: #205c74;
+    text-decoration: none;
+    box-shadow: 3px 5px 6px hwb(30 95% 5%);
+    
+}
+
+.sous{
+    display: none;
+    box-shadow: 5px 5px 5px black;
+    background-color: rgb(230, 238, 235);
+    position: absolute;
+    width: 400px;
+    /*z-index: 1000;*/
+    border-radius: 10px;
+}
+nav ul li{
+    float: left;
+    
+    text-align: center;
+    position: relative;
+}
+.alert-primary{
+    text-align: center;
+}
+body{
+    background: hsl(0, 85%, 40%);
+    
+}
+#arriereplan{
+    background-color: hsl(214, 30%, 78%);
+}

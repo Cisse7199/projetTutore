@@ -31,6 +31,18 @@ def pageAide(request):
 #Pade A propos de l´application et de ses concepteurs(une petite description)
 def aPropos(request):
     return(request, 'Egestion/aPropos.html')
+
+def listEvenement(request):
+    return(request, 'Egestion/listEvenement.html')
+
+def monProfil(request):
+    return(request, 'Egestion/monProfil.html')
+
+def nousJoindre(request):
+    return(request, 'Egestion/nousJoindre.html')
+
+def formConnec(request):
+    return(request, 'Egestion/formConnec.html')
     
 
 

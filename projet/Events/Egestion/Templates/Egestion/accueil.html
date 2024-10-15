@@ -4,54 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css\bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'cssPersonnel/Projet2.css' %}">
+    <link rel="stylesheet" href="{% static 'css\bootstrap.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="{% static 'fontawesome-free-6.6.0-web\css\all.css' %}">
-    <title>accueil</title>
+    <link rel="stylesheet" href="{% static 'projet\Events\Egestion\static\fontawesome-free-6.6.0-web\css\all.css' %}">
+    <title>Page d´accueil</title>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row" id="sommet">
             <div class="col-lg-2" id="navred">
                 
-                <img src="{% static 'Images\Capture.PNG' %}" alt="G-Events" title="G-Events" class="rounded">
+                
             </div>
             <div class="col-lg-7"  id="titre">G-EVENTS</div>
             <div class="col-lg-3"><span class="bi bi-alarm">Alarme</i></span><span class ="glyphicon glyphicon-ok form-control-feedback"> </span></div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <a href="#" class="navbar-brand">Accueil</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item aczive">
-                    <a href="#" class="navbar-brand">Evenements <span class="sr-only">(current)</span></a>
-
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="navbar-brand">A propos</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="navbar-brand dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                  </li>
-            </ul>
+        
+        <div class="row">
+            <div class="col-lg-1" id="colg1"><img src="{% static 'Images\Capture-removebg-preview.png' %}" alt="G-Event" title="G-Event"></div>
+            <div class="col-lg-1" id="colg2">G-EVENTS</div>
+                <div class="col-lg-8">
+                    <nav class="navbarr">
+                        <ul>
+                            <li><a href="">Accueil</a></li>
+                            <li class="deroulant"><a href="#">Evenements ▼</a>
+                                <ul class="sous">
+                                    <li><a href="{% url 'formevent' %}">Creer</a></li>
+                                    <li><a href="#">Gerer</a></li>
+                                    <li><a href="#">Rechercher un evenement</a></li>
+                                </ul>
+                            </li>
+                            <li class="deroulant"><a href="#">A propos ▼</a>
+                                <ul class="sous">
+                                    <li><a href="#">A propos de nous</a></li>
+                                    <li><a href="#">Nous joindre</a></li>
+                                </ul>
+                            </li>
+                            <li class="deroulant"><a href="#">Aide ▼</a>
+                                <ul class="sous">
+                                    <li><a href="{% url 'pageAide' %}">FAQs</a></li>
+                                </ul>
+                                    
+                            </li>
+                            <li class="deroulant"><a href="#">Se conecter ▼</a>
+                                <ul class="sous">
+                                    <li><a href="{% url 'form2' %}">Se connecter</a></li>
+                                    <li><a href="{% url 'formconnec' %}">S´inscrire</a></li>
+                                    <li><a href="#">Mon profil</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    
+                    </nav>
+                </div>
+            <div class="col-lg-1" id="cold1"><a href="https://fr-fr.facebook.com/login.php/" target="_blank"><i class="fa-brands fa-facebook"></i></a>&nbsp;<a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZnIiLCJteCI6IjIifQ%3D%3D%22%7D" target="_blank"><i class="fa-brands fa-twitter"></i></a>&nbsp;<a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="col-lg-1" id="cold2"><a href=""><i class="fa-solid fa-user"><br><span>Utilisateur</span></i></a>
+            </div>
         </div>
-
-        </nav>
+                   
+        
 
         <div class="row">
                     <div class="col-lg-2" id="navred"></div>
@@ -65,8 +77,8 @@
             
         </div>
         <div class="row">
-            <div class="col-lg-2">Infos de gauche</div>
-            <div class="col-lg-10">Infos de page <i class="far fa-angry" style="background-color: brown;color:blue;"></i></div>
+            <div class="col-lg-2"><h2>G-EVENTS </h2></div>
+            <div class="col-lg-10"><h2>BIENVENUE DANS CETTE PLATEFORME  DE GESTION D´EVENEMENT</h2><i class="far fa-angry" style="background-color: brown;color:blue;"></i></div>
                 
         </div>
         <div class="row">
@@ -75,11 +87,6 @@
             <div class="col-lg-4" id="piedPage">Nous utilisons une politique de securite <br>et de confidentialite <br>pour la protection de vos donnes</div>
         </div>
     </div>
-    <script src="{% static 'js\bootstrap.js' %}"></script> 
+    <script src="./js/bootstrap.js"></script> 
 </body>
 </html>
-
-
-
-
-

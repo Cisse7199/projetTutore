@@ -18,7 +18,7 @@
 }
 
 #titre{
-    background-color: hsl(76, 60%, 50%);
+    background-color: hwb(195 6% 10%);
     letter-spacing: 15px;
     font-weight: bold;
     font-size: 50px;
@@ -36,27 +36,27 @@ nav a:hover{
     color: blue;
 }
 #navred{
-    background-color: #e90d0d;
+    background-color: hsl(194, 79%, 50%);
     height: 100px !important;
 }
 #profil{
-    background-color: #0cb639;
+    background-color: hsl(191, 67%, 33%);
     height: 100px !important;
 }
 
 
 .col-lg-3:nth-of-type(1){
-    background-color: aqua;
+    background-color: rgb(129, 196, 222);
     height: 100px;
 }
 .col-lg-6{
-    background-color: #764407;
+    background-color: rgb(129, 196, 222);
     border-radius: 10px;
     border-style: hidden;
     height: 100px;
 }
 .col-lg-3:nth-last-of-type(2),.col-lg-3:nth-of-type(3){
-    background-color: green;
+    background-color: rgb(129, 196, 222);
     height: 100px;
     border-style: hidden;
 }
@@ -66,37 +66,37 @@ nav a:hover{
     border-style: hidden;
 }*/
 .col-lg-2{
-    background-color: #e90d0d;
+    background-color:rgb(129, 196, 222);
     height: 600px;
     border-style: hidden;
 }
 .col-lg-10:nth-of-type(2){
-    background-color: hsl(258, 81%, 39%);
+    background-color: rgb(129, 196, 222);
     height: 600px;
     border-style: hidden;
 }
 .col-lg-12{
-    background-color: #3e3a3a;
+    background-color: hsl(199, 64%, 66%);
     height: 60px;
 }
 .col-lg-12:last-child{
-    background-color: #0cb639;
+    background-color: rgb(129, 196, 222);
     height: 200px;
     border-style: hidden;
 }
 .col-lg-4{
     height: 200px;
-    background-color: #3fda42;
+    background-color: hsl(188, 36%, 35%);
     border-style: hidden;
     font-size: 20px;
 }
 .col-lg-8{
-    background-color: #3fda42;
-    height: 100px;
-    border-style: hidden;
+    background-color:hwb(183 35% 37%);
+    height:100px;
+    border-style:hidden;
 }
 #search{
-    height: 80px !important;
+    height: 50px !important;
     width: 500px !important;
     border-radius: 15px;
     border:3px solid blue; 
@@ -104,4 +104,166 @@ nav a:hover{
 img{
     height: 100%;
     width: 200px;
+}
+
+/*Css du bon menu de navigation ci dessous*/
+
+.sous{
+    display: none;
+    background-color:#443d3d ;
+    box-shadow: 1px 1px 2px black;
+    font-size: 17px;
+}
+
+/*.user{
+    display: none;
+    background-color:#443d3d ;
+    box-shadow: 1px 1px 2px black;
+    font-size: 17px;
+}
+#cold2 > a i:hover .user{
+    display: block;
+}*/
+
+nav > ul li:hover .sous{
+    display: block;
+    
+}
+.sous li{
+    float: left;
+    text-align: left;
+    width: 100%;
+    border-bottom: 2px solid;
+    font-size: 17px;
+    
+}
+.sous a{
+    /*padding: 10px;*/
+    border-bottom: none;
+    color: #092828;
+    font-size: 22px;
+    
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: #205c74;
+    text-decoration: none;
+    box-shadow: 3px 5px 6px hwb(30 95% 5%);
+    
+}
+
+.sous{
+    display: none;
+    box-shadow: 5px 5px 5px black;
+    background-color: rgb(230, 238, 235);
+    position: absolute;
+    width: 400px;
+    z-index: 2000;
+    border-radius: 10px;
+}
+nav ul li{
+    float: left;
+    
+    text-align: center;
+    position: relative;
+}
+
+/*embellir le nav*/
+
+nav{
+    background-color: hwb(183 35% 37%);
+    height:80px ;
+    text-align:center;
+    justify-content: center;
+    justify-items: center;
+    align-items:center;
+    text-decoration: none;
+    
+    
+}
+nav ul::after{
+    content: "";
+    display: table;
+    /*clear: both;*/
+}
+nav a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 30px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+    font-weight: bold;
+    display: block;
+    
+}
+nav a:hover{
+    background-color:blue ;
+    color: aliceblue;
+}
+
+#colg2{
+    /*background-color:hwb(183 35% 37%) ;*/
+    height: 80px;
+    border-right: 2px solid;
+    font-size: 22px;
+    letter-spacing: 5px;
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+}
+#cold1{
+    background-color:hwb(183 35% 37%) ;
+    height: 80px;
+    border-right: 2px solid;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #fcfcfc;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+#cold2{
+    background-color:hwb(183 35% 37%) ;
+    height: 80px;
+    border-left: 2px solid;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color:#fcfcfc;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+#cold1 a, #cold2 a{
+    color: white;
+}
+#col2 a{
+    width: 100px;
+    height: 150px;
+}
+
+#cold2 a:hover{
+    color: rgb(202, 238, 44);
+}
+#cold1 a:hover{
+    color:rgb(202, 238, 44); 
 }
