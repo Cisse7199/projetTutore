@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="{% static 'cssPersonnel/projetform.css' %}">
-    <link rel="stylesheet" href="{% static 'css\bootstrap.css' %}"
+    <link rel="stylesheet" href="{% static 'css\bootstrap.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="{% static 'fontawesome-free-6.6.0-web/css/all.css'%}">
     <title>Formulaire de connexion </title>
@@ -21,27 +21,27 @@
                         <li><a href="#">Accueil</a></li>
                         <li class="deroulant"><a href="#">Evenements ▼</a>
                             <ul class="sous">
-                                <li><a href="<formevent>/">Creer</a></li>
+                                <li><a href="{% url 'formevent' %}">Creer</a></li>
                                 <li><a href="#">Gerer</a></li>
                                 <li><a href="#">Rechercher un evenement</a></li>
                             </ul>
                         </li>
                         <li class="deroulant"><a href="#">A propos ▼</a>
                             <ul class="sous">
-                                <li><a href="#">A propos de nous</a></li>
+                                <li><a href="{% url 'aPropos' %}">A propos de nous</a></li>
                                 <li><a href="#">Nous joindre</a></li>
                             </ul>
                         </li>
                         <li class="deroulant"><a href="#">Aide ▼</a>
                             <ul class="sous">
-                                <li><a href="<aide>/">FAQs</a></li>
+                                <li><a href="{% url 'pageAide' %}">FAQs</a></li>
                             </ul>
                                 
                         </li>
                         <li class="deroulant"><a href="#">Se conecter ▼</a>
                             <ul class="sous">
-                                <li><a href="<connexion>/">Se connecter</a></li>
-                                <li><a href="<forme>/">S´inscrire</a></li>
+                                <li><a href="{% url 'form2connec' %}">Se connecter</a></li>
+                                <li><a href="{% url 'formconnec' %}">S´inscrire</a></li>
                                 <li><a href="#">Mon profil</a></li>
                             </ul>
                         </li>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+    {%load static%}
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{% static 'cssPersonnel/projetform.css' %}">
+        <link rel="stylesheet" href="{% static 'css\bootstrap.css' %}">
+         <title>Mon formulaire django de terst </title>
+    </head>
+    <body>
+        <h1>Inscription</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </body>
+</html>
+    

@@ -37,8 +37,8 @@
                             </li>
                             <li class="deroulant"><a href="#">A propos ▼</a>
                                 <ul class="sous">
-                                    <li><a href="#">A propos de nous</a></li>
-                                    <li><a href="#">Nous joindre</a></li>
+                                    <li><a href="{% url 'aPropos' %}">A propos de nous</a></li>
+                                    <li><a href="{% url 'formsGoogle' %}">Nous joindre</a></li>
                                 </ul>
                             </li>
                             <li class="deroulant"><a href="#">Aide ▼</a>
@@ -49,7 +49,7 @@
                             </li>
                             <li class="deroulant"><a href="#">Se conecter ▼</a>
                                 <ul class="sous">
-                                    <li><a href="{% url 'form2' %}">Se connecter</a></li>
+                                    <li><a href="{% url 'form2connec' %}">Se connecter</a></li>
                                     <li><a href="{% url 'formconnec' %}">S´inscrire</a></li>
                                     <li><a href="#">Mon profil</a></li>
                                 </ul>

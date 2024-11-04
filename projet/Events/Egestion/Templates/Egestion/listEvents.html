@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="row">
-        <div class="col-lg-1" id="colg1"><img src="./Capture-removebg-preview.png" alt="G-Event" title="G-Event"></div>
+        <div class="col-lg-1" id="colg1"><img src="{% static 'Images/Capture-removebg-preview.png' %}" alt="G-Event" title="G-Event"></div>
         <div class="col-lg-1" id="colg2">G-EVENTS</div>
             <div class="col-lg-8">
                 <nav class="navbarr">
@@ -20,27 +20,27 @@
                         <li><a href="#">Accueil</a></li>
                         <li class="deroulant"><a href="#">Evenements ▼</a>
                             <ul class="sous">
-                                <li><a href="<formevent>/">Creer</a></li>
+                                <li><a href="{% url 'formevent' %}">Creer</a></li>
                                 <li><a href="#">Gerer</a></li>
                                 <li><a href="#">Rechercher un evenement</a></li>
                             </ul>
                         </li>
                         <li class="deroulant"><a href="#">A propos ▼</a>
                             <ul class="sous">
-                                <li><a href="#">A propos de nous</a></li>
+                                <li><a href="{% url 'aPropos' %}">A propos de nous</a></li>
                                 <li><a href="#">Nous joindre</a></li>
                             </ul>
                         </li>
                         <li class="deroulant"><a href="#">Aide ▼</a>
                             <ul class="sous">
-                                <li><a href="<aide>/">FAQs</a></li>
+                                <li><a href="{% url 'pageAide' %}">FAQs</a></li>
                             </ul>
                                 
                         </li>
                         <li class="deroulant"><a href="#">Se conecter ▼</a>
                             <ul class="sous">
-                                <li><a href="<connexion>/">Se connecter</a></li>
-                                <li><a href="<forme>/">S´inscrire</a></li>
+                                <li><a href="{% url 'form2connec' %}">Se connecter</a></li>
+                                <li><a href="{% url 'formconnec' %}">S´inscrire</a></li>
                                 <li><a href="#">Mon profil</a></li>
                             </ul>
                         </li>

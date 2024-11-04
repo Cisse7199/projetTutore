@@ -28,20 +28,20 @@
                         </li>
                         <li class="deroulant"><a href="#">A propos ▼</a>
                             <ul class="sous">
-                                <li><a href="#">A propos de nous</a></li>
+                                <li><a href="{% url 'aPropos' %}">A propos de nous</a></li>
                                 <li><a href="#">Nous joindre</a></li>
                             </ul>
                         </li>
                         <li class="deroulant"><a href="#">Aide ▼</a>
                             <ul class="sous">
-                                <li><a href="<aide>/">FAQs</a></li>
+                                <li><a href="{% url 'pageAide' %}">FAQs</a></li>
                             </ul>
                                 
                         </li>
                         <li class="deroulant"><a href="#">Se conecter ▼</a>
                             <ul class="sous">
-                                <li><a href="{% url 'form2' %}">Se connecter</a></li>
-                                <li><a href="{% url 'form1' %}">S´inscrire</a></li>
+                                <li><a href="{% url 'form2connec' %}">Se connecter</a></li>
+                                <li><a href="{% url 'formconnec' %}">S´inscrire</a></li>
                                 <li><a href="#">Mon profil</a></li>
                             </ul>
                         </li>
@@ -54,14 +54,16 @@
         </div>
     </div>
     <div class="divform">
-        <img src="./Capture-removebg-preview.png" alt="G_EVENT" title="G_EVENT" class="imageaccueil">
+        <img src="{% static 'Images/Capture-removebg-preview.png' %}" alt="G_EVENT" title="G_EVENT" class="imageaccueil">
         <form action="" method="post" >
+            {% csrf_token %}
             <p><h2>Inscription</h2></p>
         <!--<div class="col-auto">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Euro</span>
                 </div>-->
+                {% csrf_token %}
         <input type="text" name="nom" value="" placeholder="Votre nom" required class="form-control">
             
         
